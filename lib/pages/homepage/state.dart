@@ -88,7 +88,7 @@ class _HomepageState extends State<Home> {
                               );
                             },
                             child: Text(
-                              "Tum Liste",
+                              "Tüm Liste",
                               style: GoogleFonts.ptSerif(
                                   fontSize: 15, color: Colors.black),
                             ),
@@ -215,7 +215,7 @@ class _HomepageState extends State<Home> {
                                 );
                               },
                               child: Text(
-                                "Tum Liste",
+                                "Tüm Liste",
                                 style: GoogleFonts.ptSerif(
                                     fontSize: 15, color: Colors.black),
                               ),

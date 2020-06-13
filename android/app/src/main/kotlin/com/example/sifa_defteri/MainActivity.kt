@@ -1,4 +1,4 @@
-package com.example.sifa_defteri
+package com.webtalanted.sifa_defteri
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity

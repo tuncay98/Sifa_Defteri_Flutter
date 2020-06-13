@@ -6,6 +6,8 @@ import 'package:http/http.dart' show Client;
 import 'dart:async';
 import 'dart:convert';
 import 'package:rxdart/rxdart.dart';
+import 'package:firebase_admob/firebase_admob.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -19,12 +21,40 @@ part 'pages/blogPage/state.dart';
 
 part 'blocs/provider.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+
+
+  WidgetsFlutterBinding.ensureInitialized();
+
+    FirebaseAdMob.instance.initialize(appId: "ca-app-pub-9352913451465220~9565766853");
+
+
+  return runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
+
+    final String name = 'SifaDefterim';
+  final FirebaseOptions options = const FirebaseOptions(
+    googleAppID: '1:602825161653:android:93e7d4569f48f858bbf7fc',
+    gcmSenderID: '602825161653',
+    apiKey: 'AIzaSyDEd3aO7kU0OthRBGP69sTL-ju-ck8LzLI',
+  );
+
+  Future<void> _configure() async {
+    final FirebaseApp app = await FirebaseApp.configure(
+      name: name,
+      options: options,
+    );
+    assert(app != null);
+    print('Configured $app');
+  }
+
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    _configure();
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
@@ -44,5 +74,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-

@@ -36,7 +36,7 @@ class Repository {
 }
 
 class ApiProvider {
-  static final String host = 'http://192.168.1.113:8000';
+  static final String host = 'https://sifadefterim.com';
   Map<String, String> header = {"auth": "5591980supertun"};
   Client client = Client();
 

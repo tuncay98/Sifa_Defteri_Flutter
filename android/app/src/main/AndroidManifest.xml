@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sifa_defteri">
+    package="com.webtalanted.sifa_defteri">
     <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- io.flutter.app.FlutterApplication is an android.app.Application that
@@ -9,7 +9,7 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="sifa_defteri"
+        android:label="Şifa Defterim"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
@@ -28,5 +28,9 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+                    <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9352913451465220~9565766853"/>
+             
     </application>
 </manifest>
