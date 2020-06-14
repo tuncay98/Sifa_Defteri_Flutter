@@ -5,7 +5,7 @@ class _BlogState extends State<BlogPage> with TickerProviderStateMixin {
 
   InterstitialAd buildInterstitialAd() {
     return InterstitialAd(
-      adUnitId: "ca-app-pub-9352913451465220/5377726944",
+      adUnitId: "ca-app-pub-",
       listener: (MobileAdEvent event) {
         if (event == MobileAdEvent.loaded) {
           showInterstitialAd();
