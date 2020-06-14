@@ -26,7 +26,7 @@ void main() async {
 
   WidgetsFlutterBinding.ensureInitialized();
 
-    FirebaseAdMob.instance.initialize(appId: "ca-app-pub-9352913451465220~9565766853");
+    FirebaseAdMob.instance.initialize(appId: "ca-app-pub-");
 
 
   return runApp(MyApp());
@@ -36,9 +36,9 @@ class MyApp extends StatelessWidget {
 
     final String name = 'SifaDefterim';
   final FirebaseOptions options = const FirebaseOptions(
-    googleAppID: '1:602825161653:android:93e7d4569f48f858bbf7fc',
-    gcmSenderID: '602825161653',
-    apiKey: 'AIzaSyDEd3aO7kU0OthRBGP69sTL-ju-ck8LzLI',
+    googleAppID: '1:',
+    gcmSenderID: '',
+    apiKey: '',
   );
 
   Future<void> _configure() async {
